@@ -1,0 +1,89 @@
+body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black;
+      /*background: linear-gradient(135deg, #c3e0f4, #a7bfe8);
+      */
+}
+.container {
+      background-color: magenta;
+      padding: 25px;
+      border-radius: 10px;
+      border:5px solid white;
+      box-shadow: 0 4px 12px white;
+      width: 350px;
+      text-align: center;
+}
+h2 {
+      /* color: #333; */
+      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+      margin-bottom: 20px; 
+      font-size:30px;
+      background-color: #4caf50;
+      color:black;
+      padding:12px 20px;
+      border:none;
+      cursor:pointer;
+      box-shadow:0 0 70px #4caf50;
+      animation: glow 4s linear infinite;
+}
+@keyframes glow{
+    0%{background-color:#4caf50;}
+    50%{background-color:#eeff00;}
+    100%{background-color:#4caf50;}
+}
+label {
+      display: block;
+      margin: 8px 0 5px;
+      font-size: 14px;
+      font-weight: bolder;
+      border:1px dashed black;
+      border-radius:3px;
+}
+input[type="number"] {
+      width: calc(33% - 4px);
+      padding: 10px;
+      margin: 0 2px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+      transition:0.2s;
+}
+input:hover{
+    color:black;
+    background-color:chocolate;
+    box-shadow:0px 0px 15px cyan,
+               0px 0px 45px cyan,
+               0px 0px 90px cyan;
+}
+.btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+}
+.btn:hover {
+      color:#fff;
+      background-color: #45a049;
+      box-shadow: 0px 0px 15px #00b7ff,
+                  0px 0px 45px #00b7ff,
+                  0px 0px 90px #00b7ff;
+}
+.result {
+      margin-top: 20px;
+      color: #333;
+      font-size: 18px;
+      font-weight: bolder;
+}
+.error {
+      color: black;
+      font-size: 14px;
+}
